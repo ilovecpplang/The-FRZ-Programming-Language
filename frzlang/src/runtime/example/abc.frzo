@@ -1,0 +1,79 @@
+# 変数宣言
+"a"
+STORE-NOREF
+
+# 変数定義
+1
+"example"
+STORE
+
+1 2 3
+"list_example"
+STORE
+
+# 変数呼び出し
+"example"
+LOAD
+
+# 標準入出力
+"example" 
+INPUT
+
+"example" 
+LOAD
+STDOUT
+
+"example"
+LOAD
+STDOUT-ERR
+
+# if文
+TRUE
+IF-TRUE
+"Hello"
+PRINT
+ENDIF
+
+# while文
+1
+WHILE
+"Hello"
+PRINT
+ENDWHILE
+
+# 関数宣言
+DEF 
+"function" 
+"arg" 
+"arg2" 
+PARAM
+ENDDEF
+
+# 関数定義
+DEF 
+"function"
+"arg"
+"arg2"
+PARAM
+"arg"
+LOAD
+"arg2"
+LOAD
+PRINT
+PRINT
+ENDDEF
+
+# 関数呼び出し
+"function"
+CALL
+"hello,"
+"world"
+ENDCALL
+
+# C++プログラムを使用
+"source.cpp"
+USE
+
+# ファイル分割
+"source.frzc"
+INCLUDE

@@ -1,0 +1,38 @@
+using io;
+
+class objectA:
+    let var1;
+
+    fn __init__(self, int a):
+        var1 = a;
+    end;
+end;
+
+--------------------------------
+
+"io" 
+USE
+
+DEF
+"objectA->__init__"
+"self"
+"a"
+PARAM
+"self"
+LOAD
+".var1"
+ADD-STRING
+"a"
+LOAD
+STORE
+ENDDEF
+
+"object.var1"
+STORE-NOREF
+
+CALL
+"objectA->__init__"
+"object"
+"neko"
+ENDCALL
+
